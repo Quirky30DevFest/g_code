@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{speaker.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="speaker-detail">
+
+  <div text-center>
+    <img [src]="speaker.profilePic" [alt]="speaker.name"><br>
+
+    <button ion-button icon-only clear small color="facebook">
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+    <button ion-button icon-only clear small color="github">
+      <ion-icon name="logo-github"></ion-icon>
+    </button>
+    <button ion-button icon-only clear small color="whatsapp">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </button>
+  </div>
+
+  <p>{{speaker.about}}</p>
+
+</ion-content>

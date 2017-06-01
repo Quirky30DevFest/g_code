@@ -1,0 +1,126 @@
+{
+
+  "schedule": [{
+    "date": "2047-05-17",
+    "groups": [{
+      "time": "WELCOME TO TFG STORE",
+      "sessions": [{
+        "name": "@home",
+        "timeStart": "",
+        "timeEnd": "",
+        "location": "",
+        "tracks": [""]
+      }, {
+        "name": "@homelivingspace",
+        "timeStart": "",
+        "timeEnd": "",
+        "location": "",
+        "tracks": [""]
+      }]
+    }, {
+      "time": "",
+      "sessions": [{
+        "name": "EXACT",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }, {
+        "name": "MAT & MAY",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }, {
+        "name": "STERNS",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }]
+    }, {
+      "time": "",
+      "sessions": [{
+        "name": "AMERICANSWISS",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }, {
+        "name": "TOTALSPORTS",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }, {
+        "name": "Fabiani",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }, {
+        "name": "MARKHAM",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }]
+    }, {
+      "time": "",
+      "sessions": [{
+        "name": "DUESOUTH",
+        "location": "",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }]
+    }, {
+      "time": "",
+      "sessions": [{
+        "name": "",
+        "location": "Room 2201",
+        "description": "",
+        "speakerNames": [""],
+        "timeStart": "",
+        "timeEnd": "",
+        "tracks": [""]
+      }]
+    }]
+  }],
+
+
+  "speakers": [{
+    "name": "THE FOSCION GROUP",
+    "profilePic": "https://lh3.ggpht.com/XNtvrCV_doDueXBcOm6brTvyrWVlBmHbOQP6dpu6FTbGlzz7se9exbrFIhtjLRlNrUo=w300",
+    "twitter": "ionicframework",
+    "about": " TFG (The Foschini Group) started trading in 1924 and has expanded its selection of brands to become forerunners in the clothing and lifestyle sectors of the South African retail industry. TFG is proud to offer a comprehensive portfolio of 16 retail brands that cover clothing, footwear, jewellery, sportswear, cellular and home stores as well as a host of innovative financial services. Everything we do at TFG is informed by our corporate culture and our determination to provide our customers with the best possible experience. We strive to be leaders in the fashion and lifestyle sectors of the retail industry in Africa. Our diverse brands allow us to push the boundaries of the retail industry in new and innovative ways – helping us to achieve our goal. We have over 1 800 stores across Africa, all of which boast our excellent instore experience. Each store is laid out in a modern design that makes it easy for customers to shop and find what they’re looking for. Open a new account today with TFG and experience true value in our stores. The different lifestyle divisions at TFG. Our divisions cover all the bases when it comes to fashion and lifestyle shopping. Read on to discover more about each one: Fashion – Our clothing brands lead the way when it comes to style, current trends and affordability. This division is broken down into 3 sections: Family store – exact! allows customers to shop for the whole family with the latest adults’ and children’s fashion. This brand focuses on providing modern South African families with affordable clothing for everyone. ",
+    "location": "SA",
+    "email": " customerservices@tfg.co.za",
+    "phone": "0860 576 576"
+  }],
+
+
+  "map": [{
+    "name": "TFG Parow",
+    "lat": -33.900000,
+    "lng": 18.600000,
+    "center": true
+  }]
+
+}

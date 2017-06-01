@@ -1,0 +1,22 @@
+// Styles for all of the user pages:
+// Login, Signup, Support
+
+page-user {
+  .logo {
+    padding: 20px 0;
+    min-height: 200px;
+    text-align: center;
+
+    img {
+      max-width: 150px;
+    }
+  }
+
+  .list {
+    margin-bottom: 0;
+  }
+  .login-background {
+  background-image: url("https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwjg6_v614_UAhVEtRQKHQCoBj0QjRwIBw&url=http%3A%2F%2Fwww.hdwallpapers.in%2Fios_7_galaxy-wallpapers.html&psig=AFQjCNFRwdJVgREea7iCRax0Z3KXIXFJdw&ust=1495961180923885") no-repeat fixed center;
+  background-size: cover;
+}
+}

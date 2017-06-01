@@ -1,0 +1,72 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Message</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  
+  <input type="file" accept="image/*;capture=camera">
+
+  <form #submitForm="ngForm" novalidate (ngSubmit)="submit(submitForm)">
+    <ion-list no-lines>
+      <ion-item>
+        <ion-label stacked color="primary">Enter your compliment/complain <a href=""></a> below</ion-label>
+        <ion-textarea [(ngModel)]="supportMessage" name="supportQuestion" #supportQuestion="ngModel" rows="6" required></ion-textarea>
+      </ion-item>
+    </ion-list>
+
+
+  <ion-item>
+    <ion-label>Category</ion-label>
+    <ion-select >
+      <ion-option value="in-store">In-store</ion-option>
+      <ion-option value="operational">Operational</ion-option>
+      <ion-option value="planning/buying">Planning/Buying</ion-option>
+      <ion-option value="quality">Quality</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Summary</ion-label>
+    <ion-select >
+      <ion-option value="TicketPricing">Ticket Pricing</ion-option>
+      <ion-option value="queues">Queues</ion-option>
+      <ion-option value="service">Service</ion-option>
+      <ion-option value="staff">Staff</ion-option>
+    </ion-select>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label>To Whom</ion-label>
+    <ion-select >
+      <ion-option value="Store manager">Store manager</ion-option>
+      <ion-option value="Area manager">Area manager</ion-option>
+      <ion-option value="Regional manager">Regional manager</ion-option>
+      <ion-option value="operational">Operational</ion-option>
+    </ion-select>
+  </ion-item>
+
+    
+
+    <p ion-text [hidden]="supportQuestion.valid || submitted === false" color="danger" padding-left>
+      complain/compliment is required
+    </p>
+
+    <div padding>
+      <button ion-button block (click)="submit(submitForm)" type="submit">Send</button>
+    </div>
+  </form>
+</ion-content>

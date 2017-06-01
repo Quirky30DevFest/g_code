@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Location</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<ion-item>
+    <ion-label>Brand</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="@Home">@Home</ion-option>
+      <ion-option value="DueSouth">DueSouth</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Division</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="@homeNorthDiv">@Home North Division</ion-option>
+      <ion-option value="@homeSouthDiv">@Home South Division</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Region</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="@homeNorthWestDiv">@Home North West</ion-option>
+      <ion-option value="@homeSouthDiv">@Home Western Cape</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Area</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="CapeTown">Cape Town</ion-option>
+      <ion-option value="Boland">Boland</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Store</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="Canal Walk">Canal Walk</ion-option>
+      <ion-option value="Willowbridge">Willowbridge</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-row responsive-sm>
+    <ion-col>
+      <button ion-button (click)="onLogin(loginForm)" type="submit" block>Next</button>
+    </ion-col>
+  </ion-row>
+
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-list #scheduleList [hidden]="shownSessions === 0">
+
+    <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
+
+      <ion-item-divider sticky>
+        <ion-label>
+          {{group.time}}
+        </ion-label>
+      </ion-item-divider>
+
+      <ion-item-sliding *ngFor="let session of group.sessions" #slidingItem [attr.track]="session.tracks[0] | lowercase" [hidden]="session.hide">
+
+        <button ion-item (click)="goToSessionDetail(session)">
+          <h3>{{session.name}}</h3>
+          <p>
+            {{session.timeStart}} &mdash;
+            {{session.timeEnd}}:
+            {{session.location}}
+          </p>
+        </button>
+
+        <ion-item-options>
+          <button ion-button color="favorite" (click)="addFavorite(slidingItem, session)" *ngIf="segment === 'all'">
+            Favorite
+          </button>
+          <button ion-button color="danger" (click)="removeFavorite(slidingItem, session, 'Remove Favorite')" *ngIf="segment === 'favorites'">
+            Remove
+          </button>
+        </ion-item-options>
+
+      </ion-item-sliding>
+
+    </ion-item-group>
+
+  </ion-list>
+
+  <ion-list-header [hidden]="shownSessions > 0">
+      No Sessions Found
+  </ion-list-header>
+
+</ion-content>
